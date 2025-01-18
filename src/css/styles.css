@@ -1,18 +1,155 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+body {
+  padding-top: 36px;
+  padding-left: 156px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.input-wrapper {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.datetime-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+  transition: color 250ms ease-in, border-color 250ms ease-in;
+}
+
+.datetime-input:hover {
+  border-color: #000;
+}
+
+.datetime-input:focus {
+  border-color: #4e75ff;
+  outline: none;
+  color: #000;
+}
+
+.datetime-input:disabled {
+  color: #808080;
+  border-color: #808080;
+}
+
+.start-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border-color: transparent;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: color 250ms ease-in, background-color 250ms ease-in;
+}
+
+.start-btn:hover {
+  background-color: #6c8cff;
+}
+
+.start-btn:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+  width: 346px;
+  height: 72px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.label {
+  text-transform: uppercase;
+}
+
+.delay-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.form-input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+}
+
+.form-input:hover {
+  border-color: #000;
+}
+
+.form-input:focus {
+  border-color: #4e75ff;
+  outline: transparent;
+}
+
+.form-fieldset {
+  display: flex;
+  max-width: 360px;
+  height: 66px;
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 24px;
+  padding-left: 16px;
+}
+
+.form-fieldset:hover, .form-fieldset:focus {
+  stroke: #000;
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 392px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: #6c8cff;
+}
